@@ -1,0 +1,90 @@
+---
+title: "Coming Soon – Les mots qui font mouche"
+description: "A new project is coming soon. Stay tuned!"
+permalink: "/index.html"
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>{{ title }}</title>
+		<meta name="description" content="{{ description }}"/>
+		<link rel="icon" href="/assets/les-mots-qui-font-mouche-logo.jpeg"/>
+		<style>
+			:root {
+				--main-bg: #91afa5;
+				/* Couleur de fond prise sur ton logo */
+				--text: #333;
+				--accent: #515b54;
+			}
+			body,
+			html {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				min-height: 100vh;
+				background: var(--main-bg);
+				color: var(--text);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: 'Segoe UI', 'Arial', sans-serif;
+				font-size: 1.25rem;
+				line-height: 1.5;
+			}
+			main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				min-width: 300px;
+			}
+			.logo {
+				width: 220px;
+				margin-bottom: 2rem;
+				/* plus de border-radius ni de fond ni de overflow */
+			}
+			.logo img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+
+			h1 {
+				font-size: 2rem;
+				letter-spacing: 0.1em;
+				color: var(--accent);
+				margin-bottom: 0.5em;
+				text-align: center;
+			}
+			@media (max-width: 480px) {
+				.logo {
+					width: 140px;
+					height: 140px;
+				}
+				h1 {
+					font-size: 1.2rem;
+				}
+			}
+			:focus-visible {
+				outline: 2px dashed var(--accent);
+				outline-offset: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<main aria-label="Page en construction">
+			<div class="logo" aria-label="Logo Les mots qui font mouche" role="img">
+				<img 
+        src="/assets/les-mots-qui-font-mouche-logo.jpeg" 
+        alt="Logo Les mots qui font mouche, une mouche dessinée au centre d'un cercle, avec le texte manuscrit Les mots et le sous-titre QUI FONT MOUCHE."
+/>
+			</div>
+			<h1>Coming soon</h1>
+		</main>
+	</body>
+</html>
